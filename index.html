@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Bootstrap Forms</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="box">
+              <h2>Bootstrap Form</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form start  -->
+
+    <section>
+      <div class="container bg-primary text-white p-5 my-5">
+        <div class="row">
+          <div class="col-lg-12">
+              <form class="row g-3 needs-validation" novalidate>
+
+                <!-- first name -->
+                <div class="col-md-6">
+                  <label for="f-name" class="form-label">First name</label>
+                  <input type="text" class="form-control f-name" id="f-name" name="f-name" placeholder="Enter Your First Name">
+                </div>
+
+                <!-- last name -->
+                <div class="col-md-6">
+                  <label for="l-name" class="form-label">Last name</label>
+                  <input type="text" class="form-control l-name" id="l-name" name="l-name" placeholder="Enter Your Last Name">
+                </div>
+
+                <!-- email -->
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control email" id="email" name="email" placeholder="Enter Your Email Address">
+                </div>
+
+                <!-- password  -->
+
+                <div class="col-md-12">
+                  <label for="pass" class="form-label">Password</label>
+                  <input type="email" class="form-control pass" id="pass" name="pass">
+                </div>
+
+                <!-- birthdate -->
+
+                  <div class="col-lg-4">
+                    <label for="b_date" class="form-label">Birth Date</label>
+                    <input type="date" class="form-control b_date" id="b_date" name="b_date">
+                  </div>
+
+                <!-- city -->
+                <div class="col-md-4">
+                  <label for="city" class="form-label">City</label>
+                  <select class="form-select" id="city" name="city">
+                    <option selected disabled value="">Choose Your City</option>
+                    <option>Dhaka</option>
+                    <option>Chittagong</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                    <option>Borishal</option>
+                    <option>Sylhet</option>
+                  </select>
+                </div>
+
+                <!-- district -->
+
+                <div class="col-md-4">
+                  <label for="city" class="form-label">District</label>
+                  <select class="form-select" id="city" name="city" required>
+                    <option selected disabled value="">Choose Your District</option>
+                    <option>kishoreganj</option>
+                    <option>Narshingdi</option>
+                    <option>Savar</option>
+                    <option>Gazipur</option>
+                    <option>Lakshmipur</option>
+                    <option>Manikganj</option>
+                  </select>
+                </div>
+
+                <!-- file  -->
+                <label for="file" class="form-label">Upload Your Photo</label>
+                <div class="col-lg-12">
+                  <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="file02" required>
+                    <label class="input-group-text" for="file02">Upload</label>
+                  </div>
+                </div>
+                
+
+                <!-- gender -->
+                <label for="gender" class="form-label">Select Your Gender</label>
+                <div class="form-control">
+                  <div class="col-lg-12">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="radios" id="radios">
+                      <label class="form-check-label" for="radios">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="radios" id="radios">
+                      <label class="form-check-label" for="radios">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="radios" id="radios">
+                      <label class="form-check-label" for="radios">Other</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- switch -->
+
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch">
+                  <label class="form-check-label" for="switch">Turn on notification</label>
+                </div>
+
+                <!-- checkbox -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      I am agree to all terms and conditions
+                    </label>
+                  </div>
+                </div>
+
+                <!-- submit button -->
+                <div class="col-12">
+                  <button class="btn btn-danger" type="submit">Submit form</button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- form end -->
+
+    <!-- form validation -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="box">
+              <h2>Bootstrap Form Validation</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container bg-warning p-5 my-5">
+        <div class="row">
+          <div class="col-lg-12">
+              <form class="row g-3 needs-validation" novalidate>
+
+                <!-- first name -->
+                <div class="col-md-6">
+                  <label for="f-name" class="form-label">First name</label>
+                  <input type="text" class="form-control f-name" id="f-name" name="f-name" placeholder="Enter Your First Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please Enter Your First Name.
+                  </div>
+                </div>
+
+                <!-- last name -->
+                <div class="col-md-6">
+                  <label for="l-name" class="form-label">Last name</label>
+                  <input type="text" class="form-control l-name" id="l-name" name="l-name" placeholder="Enter Your Last Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please Enter Your Last Name.
+                  </div>
+                </div>
+
+                <!-- email -->
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control email" id="email" name="email" placeholder="Enter Your Email Address" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please Enter a Valid Email Address.
+                  </div>
+                </div>
+
+                <!-- password  -->
+
+                <div class="col-md-12">
+                  <label for="pass" class="form-label">Password</label>
+                  <input type="email" class="form-control pass" id="pass" name="pass" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please enter a sucure password!
+                  </div>
+                </div>
+
+                <!-- birthdate -->
+
+                  <div class="col-lg-4">
+                    <label for="b_date" class="form-label">Birth Date</label>
+                    <input type="date" class="form-control b_date" id="b_date" name="b_date" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please Enter Your Birth Date.
+                    </div>
+                  </div>
+
+                <!-- city -->
+                <div class="col-md-4">
+                  <label for="city" class="form-label">City</label>
+                  <select class="form-select" id="city" name="city" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Dhaka</option>
+                    <option>Chittagong</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                    <option>Borishal</option>
+                    <option>Sylhet</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a city.
+                  </div>
+                </div>
+
+                <!-- district -->
+
+                <div class="col-md-4">
+                  <label for="city" class="form-label">District</label>
+                  <select class="form-select" id="city" name="city" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>kishoreganj</option>
+                    <option>Narshingdi</option>
+                    <option>Savar</option>
+                    <option>Gazipur</option>
+                    <option>Lakshmipur</option>
+                    <option>Manikganj</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select your district.
+                  </div>
+                </div>
+
+                <!-- file  -->
+                <label for="file" class="form-label">Upload Your Photo</label>
+                <div class="col-lg-12">
+                  <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="file02" required>
+                    <label class="input-group-text" for="file02">Upload file</label>
+                  </div>
+                </div>
+                
+
+                <!-- gender -->
+                <label for="gender" class="form-label">Select Your Gender</label>
+                <div class="form-control">
+                  <div class="col-lg-12">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="radios" id="radios" required>
+                      <label class="form-check-label" for="radios">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="radios" id="radios" required>
+                      <label class="form-check-label" for="radios">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="radios" id="radios" required>
+                      <label class="form-check-label" for="radios">Other</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- switch -->
+
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch">
+                  <label class="form-check-label" for="switch">Turn on notification</label>
+                </div>
+
+                <!-- checkbox -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      I am agree to all terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- submit button -->
+                <div class="col-12">
+                  <button class="btn btn-danger" type="submit">Submit form</button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form validation -->
+
+
+
+    <!-- js links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.box{
+    min-height: 60px;
+    background-color: red;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+}
